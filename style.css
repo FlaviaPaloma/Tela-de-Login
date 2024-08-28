@@ -1,0 +1,93 @@
+/* Reset básico para garantir uma aparência consistente entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilização do título */
+h1 {
+    color: #0d0d0d;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Container que centraliza o formulário no meio da página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 60px); /* Ajuste a altura para acomodar o título */
+    width: 100%;
+}
+
+/* Estilização do formulário */
+form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilização dos rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilização dos campos de entrada */
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilização dos botões */
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Remover estilização do botão de captura e do spinner de carregamento */
+#captureButton {
+    display: none; /* Remover se não precisar do botão de captura */
+}
+
+#loadingSpinner {
+    display: none; /* Remover se não precisar do spinner */
+}
+
+/* Estilização de elementos ocultos */
+.hidden {
+    display: none;
+}
